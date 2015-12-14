@@ -4,7 +4,7 @@ import { Thumbnail, Button } from 'react-bootstrap';
 class ImageCard extends React.Component{
     render(){
         return (
-            <Thumbnail src="http://lorempixel.com/242/200/nature/" alt="242x200">
+            <Thumbnail src="http://lorempixel.com/400/400/nature/" alt="400x400">
                 <h3>Thumbnail label</h3>
                 <p>Description</p>
                 <p>
