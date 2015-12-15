@@ -1,5 +1,5 @@
 # Synopsis
-This project is a photo gallery application that displays an list of images with the possibility to add, remove and search by name.
+This project is a photo gallery application that displays a list of images with the possibility to add, remove and search by name.
 
 ![alt text][gallery]
 
