@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal, Button, Input, ButtonInput } from 'react-bootstrap';
 import Actions from '../actions';
+import trim from 'trim';
 
 
 class NewImageModal extends React.Component{
@@ -42,7 +43,7 @@ class NewImageModal extends React.Component{
     }
 
     addImage(){
-        if (this.state.name == '' || this.state.file == '')
+        if (trim(this.state.name)== '' || this.state.file == '')
         {
             console.log('name and file are required!');
             return;
