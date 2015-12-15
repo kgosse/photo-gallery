@@ -4,7 +4,8 @@ class Actions{
     constructor(){
         this.generateActions(
             'addImage',
-            'removeImage'
+            'removeImage',
+            'nameFilter'
         );
     }
 }

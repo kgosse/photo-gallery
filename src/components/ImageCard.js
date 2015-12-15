@@ -9,7 +9,6 @@ class ImageCard extends React.Component{
                 <h3>{this.props.image.name}</h3>
                 <p>{this.props.image.description}</p>
                 <p>
-                    <Button bsStyle="warning">Modify</Button>&nbsp;
                     <Button bsStyle="danger" onClick={this.deleteImage.bind(this)}>Delete</Button>
                 </p>
             </Thumbnail>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Input, Button, Modal } from 'react-bootstrap';
 import ImageModal from './NewImageModal';
+import Actions from '../actions';
 
 
 class Menu extends React.Component{
@@ -34,7 +35,7 @@ class Menu extends React.Component{
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Navbar.Form pullLeft>
-                        <Input type="text" placeholder="Search"/>
+                        <Input type="text" placeholder="Search" onChange={this.nameFilter} />
                         {' '}
                         <Button bsStyle='success' onClick={this.open}>Add Image</Button>
                     </Navbar.Form>
@@ -45,6 +46,10 @@ class Menu extends React.Component{
 
 
         return navbarInstance
+    }
+
+    nameFilter(e){
+        Actions.nameFilter(e.currentTarget.value || null);
     }
 }
 

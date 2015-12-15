@@ -6,7 +6,8 @@ import { decorate, bind, datasource } from 'alt-utils/lib/decorators';
 class ImageStore{
     constructor(){
         this.state = {
-            images: []
+            images: [],
+            nameFilter: null
         };
     }
 
@@ -21,6 +22,12 @@ class ImageStore{
     removeImage(image){
         let images = this.state.images.filter((img)=> img.key != image.key);
         this.setState({images});
+    }
+
+
+    @bind(Actions.nameFilter)
+    nameFilter(nameFilter){
+        this.setState({nameFilter});
     }
 }
 

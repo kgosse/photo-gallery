@@ -17,10 +17,15 @@ export default class App extends Component {
     }
 
     render() {
-        let images = this.props.images.map((img, index)=>{
+        let { images, nameFilter } = this.props;
+
+        images = images.map((img, index)=>{
             img.key = 'img' + index;
             return img;
         });
+
+        if (nameFilter && nameFilter != '')
+            images = images.filter((img)=> img.name.includes(nameFilter));
 
         return (
             <div>

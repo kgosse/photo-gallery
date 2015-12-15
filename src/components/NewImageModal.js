@@ -20,9 +20,9 @@ class NewImageModal extends React.Component{
     render(){
         const inputTypeInstance = (
             <form>
-                <Input type="text" label="Name" placeholder="Enter Name" onChange={this.updateName} required/>
+                <Input type="text" label="Name*" placeholder="Enter Name" onChange={this.updateName} required/>
                 <Input type="textarea" label="Description" placeholder="Enter Description" onChange={this.updateDescription} />
-                <Input type="file" label="File" onChange={this.updateFile} accept="image/*" />
+                <Input type="file" label="File*" onChange={this.updateFile} accept="image/*" />
             </form>
         );
 
