@@ -8,7 +8,6 @@ class ImageCard extends React.Component{
                 <h3>{this.props.image.name}</h3>
                 <p>{this.props.image.description}</p>
                 <p>
-                    <Button bsStyle="primary">Visualize</Button>&nbsp;
                     <Button bsStyle="warning">Modify</Button>&nbsp;
                     <Button bsStyle="danger">Delete</Button>
                 </p>
