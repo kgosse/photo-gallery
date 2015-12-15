@@ -50,6 +50,11 @@ class NewImageModal extends React.Component{
         let {name, description, file} = this.state;
         Actions.addImage({name, description, file});
         this.props.close();
+        this.setState({
+            name: '',
+            description: '',
+            file: ''
+        });
     }
 
     updateName(e){

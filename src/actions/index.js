@@ -3,7 +3,8 @@ import alt from '../alt';
 class Actions{
     constructor(){
         this.generateActions(
-            'addImage'
+            'addImage',
+            'removeImage'
         );
     }
 }

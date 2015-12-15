@@ -16,6 +16,12 @@ class ImageStore{
             images: this.state.images.concat(img)
         });
     }
+
+    @bind(Actions.removeImage)
+    removeImage(image){
+        let images = this.state.images.filter((img)=> img.key != image.key);
+        this.setState({images});
+    }
 }
 
 export default alt.createStore(ImageStore);

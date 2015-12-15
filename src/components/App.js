@@ -21,12 +21,7 @@ export default class App extends Component {
             img.key = 'img' + index;
             return img;
         });
-/*        for (var i = 1; i <= 3; ++i){
-            let image = {};
-            image.key = 'image' + i;
-            image.image = <ImageCard />;
-            images.push(image);
-        }*/
+
         return (
             <div>
                 <Menu />
