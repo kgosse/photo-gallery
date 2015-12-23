@@ -21,6 +21,7 @@ This project is a photo gallery application that displays a list of images with 
     > start http://localhost:8080
     # or on unix systems
     > open http://localhost:8080
+    > node server.js # and refresh your browser
 </pre>
 
 ### Technologies
